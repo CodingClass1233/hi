@@ -1,0 +1,51 @@
+<!Doctype html>
+	<html>
+	<head>
+		<style type="text/css">
+			p:first-child{
+				color: lightblue;
+			}
+			p:first-child i{
+				color: purple;
+			}
+			input:checked{
+				height:20px;
+				width: 20px;
+				color: lightblue;
+			}
+			input[type=text]:enabled{
+				background: #ffff00;
+			}
+			input[type=text]:disabled{
+				background: #dddddd;
+			}
+			input[type=text]:focus {
+				background-color: orange;
+			}
+			input[type=number]:in-range{
+				border: 2px solid lightblue;
+			}
+		</style>
+	</head>
+	<body>
+		<p>This is some text.</p>
+		<p>This is some text.</p>
+		<div>
+			<p><i>This is some text.</i></p>
+			<p>This is some text.</p>
+		</div>
+		<form action="#">
+			<input type="radio" checked="checked" value="male" name="gender">Male<br>
+			<input type="radio" value="female" name="gender">Female<br>
+			<input type="checkbox"checked="checked" value="Bike">I have a bike<br>
+			<input type="checkbox" value="Car">I have a car</form>
+			<form action="#">
+				First name:<input type="text" value="Mickey"><br>
+				Last name:<input type="text" value="Mouse"><br>
+				Country:<input type="text" disabled="disabled" value="Disneyland">
+				<br>
+				<br>
+				<input type="number" min="1" max="10" value="7">
+			</form>
+		</body>
+		</html>
